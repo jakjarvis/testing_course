@@ -47,7 +47,7 @@ it("should throw an error is no value is passed into the function", () => {
   const resultFn = () => {
     add();
   };
-  expect(resultFn).toThrow();
+  expect(resultFn).toThrow(/is not iterable/);
 });
 
 it("should throw if provided with nultiple arguements instead of an array", () => {
